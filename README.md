@@ -1,4 +1,4 @@
-# Betting Site Development
+# Betting Site Development ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 Welcome to the Betting Site Development repository. This project aims to create a cutting-edge online betting platform that operates seamlessly across multiple blockchains, including Solana, Ethereum, and BNB.
 
