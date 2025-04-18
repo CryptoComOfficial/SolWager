@@ -8,7 +8,7 @@ const { check, validationResult } = require('express-validator');
 const normalize = require('normalize-url');
 
 const User = require('../../models/User');
-const auth = require('../../middleware/auth')
+const auth = require('../../middleware/auth');
 
 // @route    POST api/users
 // @desc     Register user

